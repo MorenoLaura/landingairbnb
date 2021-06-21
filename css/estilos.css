@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*NAVEGADOR*/
+nav{
+    display: flex;
+    height: 80px;
+    background-color: white;
+    border-bottom: 1px solid black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 2px 19px #eee;
+}
+
+.navegador #brand svg{
+    color:  #FF385C ;
+}
+
+.navegador #search_nav {
+    border: 1px solid #DDD;
+    border-radius: 30px;
+    padding: 13px 25px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegador #search_nav i{
+    font-size: 12px;
+    background-color:  #FF385C ;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.navegador #profile_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navegador #profile_nav>div{
+    padding: 10px;
+}
+
+.navegador #profile_nav #person{
+    display: flex;
+    
+    align-items: center;
+    border: 1px solid #DDD;
+    border-radius: 30px;
+    padding: 13px 25px;
+}
+
+.navegador #profile_nav #person #icon_person{
+    display: flex;
+    width: 30px;
+    margin-left: 10px;
+}
+
+#cabecera{
+    height: 90vh;
+    background-image: url(https://a0.muscache.com/im/pictures/cf39f4c4-e860-43d4-85be-deddd7b2da90.jpg?im_w=1440);
+    background-size: cover;
+    background-position: center;
+    padding: 146px 80px 40px 80px;
+    display: flex;
+}
+
+#cabecera>div{
+    width: 420px;
+    color: white;
+   
+}
+
+#cabecera h1{
+    font-size: 57px;
+}
+#cabecera>div a{
+    background-color: white;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 7px;
+
+}
+
+/*CIUDADES*/
+
+#ciudades{
+    padding:  40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+
+}
+#ciudades .ciudad{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 10p;
+    width: 25%;
+ 
+    
+}
+#ciudades .ciudad img{
+    border-radius: 15px;
+}
+#ciudades .ciudad .info_ciudad{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    justify-content: center;
+
+}
+/*Tipo de alojamientos*/
+
+#tipos_alojamientos{
+    padding: 0 70px;
+    
+   
+}
+#tipos_alojamientos span{
+    display: flex;
+}
+
+#tipos_alojamientos .alojamientos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+#tipos_alojamientos .alojamientos .alojamiento{
+    width: 25%;
+}
+   
+#tipos_alojamientos .alojamientos img{
+    border-radius: 15px;
+}
+
+#tipos_alojamientos .alojamientos .info_alojamientos{
+    padding: 10px 10px;
+    font-size: 20px;
+    
+}
+
+/*EXPLORA EL MUNDO*/
+
+#explora{
+    background-color: black;
+}
+
+#explora>div{
+    color: white;
+    padding: 5px 58px;
+}
+
+.actividades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.actividades .actividad img{
+    border-radius: 20px;
+    width: 90%;
+}
+
+
+.actividades .actividad .info_actividad{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    
+}
+
+/*ANFITRIONES*/
+
+#anfitriones{
+    padding: 25px 10px;
+}
+
+#anfitriones>h1{
+    padding: 0 50px;
+}
+
+#anfitriones .cajas_anfitriones{
+    display: flex;
+    flex-direction: row;
+    padding: 0 48px;
+}
+
+#anfitrion img{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
+#anfitrion span{
+    padding: 16px 4px;
+    display: flex;
+}
+
+/*Footer*/
+
+#footer{
+    background-color: #F7F7F7;
+    border-top: 1px solid #DDDDDD;
+    padding: 30px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer ul li{
+    list-style-type: none;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+    
+
+/*RESPONSIVE AIRBNB*/
+
+@media (min-width:62px) and (max-width:800px){
+    #cabecera{
+        width: 100%;
+        height: 1000px;
+    }
+    .navegador #brand svg{
+        width: 0;
+        
+        visibility: hidden;
+    }
+    #profile_nav{
+        visibility:hidden;
+        width: 0;
+    }
+    .navegador #search_nav{
+        width: 100%;
+
+    }
+}
+
+
